@@ -71,7 +71,7 @@ export default function InterviewPage() {
     Swal.fire({
       title: "AI가 동화책을 만들고 있어요🤖",
       html: `<b></b>ms 남았어요.`,
-      timer: 40000,
+      timer: 50000,
       timerProgressBar: true,
       allowOutsideClick: false,
       didOpen: () => {
