@@ -79,7 +79,7 @@ export default function PostPage({ params }: { params: { id: string } }) {
       <div className="divider"></div>
       <div>
         {post.body.map((item, index) => (
-          <div key={index} className="flex">
+          <div key={index} className="flex flex-col lg:flex-row">
             <Image
               src={item.imageUrl}
               alt={`Image ${index}`}
@@ -87,7 +87,9 @@ export default function PostPage({ params }: { params: { id: string } }) {
               height={480}
               className="rounded-2xl m-10"
             />
-            <p className="m-10 p-10 text-xl leading-10">{item.text}</p>
+            <div>
+              <p className="m-10 p-10 text-xl leading-10">{item.text}</p>
+            </div>
             {/* 기타 필요한 데이터 렌더링 */}
           </div>
         ))}
