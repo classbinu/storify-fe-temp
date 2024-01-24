@@ -35,7 +35,7 @@ export default function SignupPage() {
   useEffect(() => {
     Swal.fire({
       title: "안내",
-      html: "정글피디아 AI는 테스트 서비스입니다.<br>계정 및 게시글은 예고 없이 삭제될 수 있습니다.",
+      html: "스토리파이는 테스트 서비스입니다.<br>계정 및 게시글은 예고 없이 삭제될 수 있습니다.",
       icon: "info",
       confirmButtonText: "확인",
     });

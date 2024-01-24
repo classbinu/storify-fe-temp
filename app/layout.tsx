@@ -10,8 +10,8 @@ import type { Metadata } from "next";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "정글피디아",
-  description: "개발자 면접 준비는 정글피디아",
+  title: "스토리파이",
+  description: "당신의 일상이 동화책이 됩니다.",
 };
 
 export default function RootLayout({
