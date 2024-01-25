@@ -18,7 +18,8 @@ export default function PostListPage() {
       const response = await fetch(
         `https://storify-be.fly.dev/api/books?page=1&limit=999`
       );
-      const newPosts = await response.json();
+      const reaPosts = await response.json();
+      const newPosts = reaPosts.books;
       setPosts(newPosts);
     } catch (error) {
       console.error(error);

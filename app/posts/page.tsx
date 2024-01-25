@@ -26,7 +26,8 @@ export default function PostListPage() {
       const response = await fetch(
         `https://storify-be.fly.dev/api/posts?offset=${offset}&limit=${limit}`
       );
-      const newPosts = await response.json();
+      const reaPosts = await response.json();
+      const newPosts = reaPosts.books;
 
       if (newPosts.length < limit || newPosts.length === 0) {
         setAllDataLoaded(true);
